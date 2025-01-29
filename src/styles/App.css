@@ -1,0 +1,76 @@
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 equal-width columns */
+  grid-gap: 10px;
+  max-width: 280px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-items: center; /* Center the items horizontally inside the grid */
+}
+
+
+.display {
+  grid-column: span 4;  /* Make the display span across all 4 columns */
+  background-color: #222;
+  color: #fff;
+  padding: 0px;
+  font-size: 36px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: right;
+  height: 60px;  /* Set a fixed height */
+  width: 75%;  /* Ensure it spans the full width of the container */
+  overflow: hidden;  /* Prevent text from overflowing if too long */
+  display: flex;
+  align-items: right;  /* Vertically center the content */
+  justify-content: center;  /* Horizontally center the content */
+  white-space: nowrap;  /* Prevent the text from wrapping to a new line */
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 columns for buttons */
+  gap: 10px;
+}
+
+.button {
+  padding: 20px;
+  font-size: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.button:active {
+  background-color: #ddd;
+}
+
+.clear-btn {
+  grid-column: span 4; /* Make the clear button span across all 4 columns */
+  padding: 20px;
+  font-size: 24px;
+  background-color: #f44336;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.clear-btn:hover {
+  background-color: #d32f2f;
+}
+
+.clear-btn:active {
+  background-color: #b71c1c;
+}

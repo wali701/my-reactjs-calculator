@@ -1,0 +1,15 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+  }
+  .input {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .result {
+    font-size: 30px;
+    color: #a1c4c1f3;
+  }
+  
